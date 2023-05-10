@@ -9,7 +9,7 @@ const UserSchema = new Schema({
     number: { type: String, required: true },
     gender: { type: String, required: false },
     img: { type: String, required: false },
-    admin: { type: Boolean, required: false }
+    admin: { type: String, required: false }
 })
 
 module.exports = mongoose.model("Users", UserSchema)
