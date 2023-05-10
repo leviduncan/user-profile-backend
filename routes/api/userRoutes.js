@@ -12,6 +12,7 @@ router.post('/add', (req, res) => {
         number: req.body.number,
         gender: req.body.gender,
         img: req.body.img,
+        admin: req.body.role
     })
     newUser.save()
         .then(user => res.json(user))

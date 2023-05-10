@@ -13,7 +13,7 @@ app.use(express.json())
 connectDB()
 
 app.get("/", (req, res) => {
-    res.send('Yes, we are goo to go!')
+    res.send('Yes, we are good to go!')
 })
 
 const userRouter = require('./routes/api/userRoutes')
