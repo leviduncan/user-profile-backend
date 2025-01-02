@@ -5,7 +5,7 @@
   "description": "None Yet",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && mkdir dist && cp -r src dist",
+    "build": "rimraf dist && mkdir dist && xcopy /s /i src dist",
     "start": "node dist/index.js"
   },
   "license": "ISC",
