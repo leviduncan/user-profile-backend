@@ -14,11 +14,11 @@ jobs:
       - name: Get latest code
         uses: actions/checkout@v3
 
-      # Step 2: Set up SSH and deploy the build folder
-      - name: Deploy build folder to server
+      # Step 2: Set up SSH and deploy the dist folder
+      - name: Deploy dist folder to server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          local-dir: ./build/
+          local-dir: ./dist/
